@@ -12,6 +12,9 @@ mkdir distrib
 make -f Makefile.wifi  -j8
 mv _build/uno_r4/$PROJECT_NAME.hex distrib/dfu_wifi.hex
 rm -rf _build
+make -f Makefile.wifiusb  -j8
+mv _build/uno_r4/$PROJECT_NAME.hex distrib/dfu_wifiusb.hex
+rm -rf _build
 make -f Makefile.minima  -j8
 mv _build/uno_r4/$PROJECT_NAME.hex distrib/dfu_minima.hex
 rm -rf _build
